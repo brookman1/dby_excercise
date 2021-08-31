@@ -25,5 +25,5 @@ input_s = """[
 
     
 input_list = json.loads(input_s)
-print('output ready:')
-pprint.pprint(optimal_order_output2(input_list)) 
+print(json.dumps(optimal_order_output2(input_list)).replace('}, ', '},\n'))
+#pprint.pprint(optimal_order_output2(input_list)) 
